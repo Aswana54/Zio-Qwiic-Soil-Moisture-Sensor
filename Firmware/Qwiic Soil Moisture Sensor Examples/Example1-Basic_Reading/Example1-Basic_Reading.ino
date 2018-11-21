@@ -51,7 +51,7 @@ void get_value() {
   ADC_VALUE=ADC_VALUE_H;
   ADC_VALUE<<=8;
   ADC_VALUE|=ADC_VALUE_L;
-  Serial.print("ADC_VALUE:  ");
+  Serial.print("Soil Moisture:  ");
   Serial.println(ADC_VALUE,DEC);
   }
   uint16_t x=Wire.read(); 
